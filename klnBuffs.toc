@@ -1,0 +1,12 @@
+## Interface: 80000
+## Title: |cFF7F2A90kln|r|Buffs
+## Notes: Player buffs and debuffs optimized by and for Kellen.
+## Author: Kellen
+## X-Copyright: Copyright (c) 2018 Kellen.  All rights reserved.
+## X-Website: https://github.com/mikattack/klnBuffs
+
+## Dependencies: klnCore
+## OptionalDeps: kMedia
+
+template.xml
+buffs.lua
