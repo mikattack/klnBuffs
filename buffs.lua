@@ -142,7 +142,7 @@ local function UpdateTime(self, elapsed)
     else
       local secs  = tonumber(math.floor(seconds))
       local mins  = tonumber(math.floor(seconds/60));
-      local hours = tonumber(kln.round(mins/60,1));
+      local hours = tonumber(klnCore.round(mins/60,1));
 
       if (hours and hours > 1) then
         self.duration:SetText(hours.."h")
