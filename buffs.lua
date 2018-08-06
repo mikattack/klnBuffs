@@ -202,7 +202,7 @@ local function InitiateAura(self, name, button)
   klnCore.frames.setBackdrop(button)
   
   if filter == "HARMFUL" then
-    button.border:SetVertexColor(.7,0,0,1)
+    button.background:SetVertexColor(.7,0,0,1)
   end
   
   if not button.texture then
