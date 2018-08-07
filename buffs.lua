@@ -268,16 +268,6 @@ ns.addon:SetScript("OnEvent",function(self,event,name)
     toggle(BuffFrame)
     toggle(TemporaryEnchantFrame)
     
-    -- Show who casts each buff
-    hooksecurefunc(GameTooltip, "SetUnitAura", function(self, unit, index, filter)
-      local caster = select(7, UnitAura(unit, index, filter))
-      local name = caster and UnitName(caster)
-      if name then
-        self:AddDoubleLine("Cast by:", name, nil, nil, nil, 1, 1, 1)
-        self:Show()
-      end
-    end)
-    
     -- Clean up
     setHeaderAttributes = nil
     collectgarbage("collect")
