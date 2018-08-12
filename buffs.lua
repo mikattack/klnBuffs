@@ -142,7 +142,7 @@ local function UpdateTime(self, elapsed)
     else
       local secs  = tonumber(math.floor(seconds))
       local mins  = tonumber(math.floor(seconds/60));
-      local hours = tonumber(klnCore.round(mins/60,1));
+      local hours = tonumber(kln.round(mins/60,1));
 
       if (hours and hours > 1) then
         self.duration:SetText(hours.."h")
@@ -199,7 +199,7 @@ local function InitiateAura(self, name, button)
   button:SetScript('OnUpdate', UpdateTime)
   button:SetScript('OnAttributeChanged', OnAttributeChanged)
   
-  klnCore.frames.setBackdrop(button)
+  kln.frames.setBackdrop(button)
   
   if filter == "HARMFUL" then
     button.background:SetVertexColor(.7,0,0,1)
